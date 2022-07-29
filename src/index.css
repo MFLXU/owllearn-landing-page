@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Maven Pro', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+@layer base {
+    /* ----- Default Styling ----- */
+    section{
+        @apply py-10 px-4 md:px-0
+    }
+    .btn{
+        @apply font-bold text-lg py-4 px-8 rounded-md w-full md:w-fit text-center
+    }
+    .btn-primary{
+        @apply text-white bg-[#DC4298] hover:opacity-90 duration-300
+    }
+    .btn-ghost{
+        @apply border text-[#DC4298] border-[#DC4298] hover:text-white hover:bg-[#DC4298] duration-300
+    }
+    /* ----- Navbar ----- */
+    .nav__con{
+        @apply flex items-center justify-between py-4
+    }
+    .nav__links{
+        @apply hidden md:flex items-center justify-between gap-8
+    }
+    .nav__link{
+        @apply hover:font-bold hover:underline duration-300
+    }
+    /* ----- Hero Section ----- */
+    .hero__con{
+        @apply grid md:grid-cols-2 md:gap-20 gap-8
+    }
+    .hero__text{
+        @apply flex justify-center  flex-col
+    }
+    .hero__text h1{
+        @apply text-6xl md:text-6xl font-extrabold mb-2
+    }
+    .hero__text img{
+        @apply md:w-[60%] mb-4
+    }
+    .hero__text p{
+        @apply font-medium mb-8 text-lg
+    }
+    .hero__text-cta{
+        @apply flex flex-col md:flex-row items-center gap-4
+    }
+    .hero__text-cta div {
+        @apply flex items-center justify-center
+    }
+    .hero__text-cta img{
+        @apply w-full m-0
+    }
+    /* ----- Partners ----- */
+    .partners__section{
+        @apply bg-pink-50
+    }
+    .partners__con{
+        @apply  flex items-center justify-between md:flex-row flex-col gap-8 md:gap-12
+    }
+    .partners__con h2{
+        @apply text-3xl font-bold md:w-[25%] text-center md:text-left
+    }
+    .partners__logos{
+        @apply grid grid-cols-2 md:grid-cols-5
+    }
+    .partner__logo{
+        @apply flex items-center justify-center cursor-pointer hover:scale-105 duration-300
+    }
+    .partner__logo:nth-child(5){
+        @apply col-span-2 md:col-span-1
+    }
+    /* ----- About US ----- */
+    .aboutus__con{
+        @apply grid md:grid-cols-2 md:gap-20 gap-8
+    }
+    .aboutus__text{
+        @apply flex flex flex-col gap-4
+    }
+    .aboutus__text h2{
+        @apply text-4xl font-bold
+    }
+    .aboutus__text p {
+        @apply text-2xl text-gray-400
+    }
+    .aboutus__text a {
+        @apply mt-auto
+    }
+    /* ----- Courses ----- */
+
+
+}
